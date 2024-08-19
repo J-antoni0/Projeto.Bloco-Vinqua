@@ -1,0 +1,42 @@
+
+* {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 595;
+    font-size: 1.2em;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+  
+:root {
+
+    --cormain: #d6d5ce;
+
+}
+
+
+html , body {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+
+    width: 500px;
+    height: 500px;
+    background-color: var(--cormain);
+    text-align: center;
+    margin-top: 50%;
+}
+
+main > p {
+
+    transform: scaleY(0.6);
+    margin: 0;
+    padding: 10px;
+}
