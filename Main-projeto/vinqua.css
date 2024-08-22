@@ -1,18 +1,19 @@
 
 * {
-    font-family: "New Amsterdam", sans-serif;
+    font-family: "Jersey 10", sans-serif;
     font-weight: 500;
-    font-style: normal;
+    font-optical-sizing: auto;  /* Ajusta automaticamente o design da fonte para otimização */
+    letter-spacing: 0.5px;   /* Adiciona leve espaçamento entre as letras para um ar sofisticado */
     color: rgb(255, 255, 255);
     margin: 0;
     border: 0;
     padding: 0;
 }
-  
+
 :root {
 
     --cormain: #d6d5ce;
-
+    --cor-texto-menos-chamativo: rgba(255, 255, 255, 0.699);
 }
 
 
@@ -37,9 +38,15 @@ html > body > main {
     text-align: center;
 }
 
-main > p {
-
-    transform: scaleY(0.6);
+main > p.texto-tipo-1 {
+    line-height: 0.6em;    /* cria espaçamento vertical entre os textos */
+    transform: scaleY(1);   /* "espreme" o texto */
+    font-size: 3em;
     text-align: center;
+    padding: 5px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+}
+
+main > p > span.texto-menos-chamativo {
+    color: var(--cor-texto-menos-chamativo);
 }
