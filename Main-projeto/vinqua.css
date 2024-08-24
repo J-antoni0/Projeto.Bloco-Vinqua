@@ -1,9 +1,11 @@
 
+@charset "UTF-8";
+
 * {
-    font-family: "Jersey 10", sans-serif;
+    font-family: 'Jersey 10' , 'Times New Roman';
     font-weight: 500;
     font-optical-sizing: auto;  /* Ajusta automaticamente o design da fonte para otimização */
-    letter-spacing: 0.5px;   /* Adiciona leve espaçamento entre as letras para um ar sofisticado */
+    letter-spacing: 1px;   /* Adiciona leve espaçamento entre as letras para um ar sofisticado */
     color: rgb(255, 255, 255);
     margin: 0;
     border: 0;
@@ -26,25 +28,30 @@ html , body {
 
 html > body {
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 html > body > main {
-
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-color: var(--cormain);
     text-align: center;
+    border-radius: 25px;
 }
 
 main > p.texto-tipo-1 {
     line-height: 0.6em;    /* cria espaçamento vertical entre os textos */
-    transform: scaleY(1);   /* "espreme" o texto */
     font-size: 3em;
-    text-align: center;
-    padding: 5px;
+    font-style: italic;
+    padding: 30px 5px 5px 5px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+    cursor: context-menu;
+}
+
+main > p#p-segundario {
+    padding: 5px 45px 5px 5px;
 }
 
 main > p > span.texto-menos-chamativo {
