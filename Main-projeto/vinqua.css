@@ -60,7 +60,7 @@ main > p#p-segundario {
     padding: 5px 45px 5px 5px;
 }
 
-main > p > span.texto-menos-chamativo {
+span.texto-menos-chamativo {
     color: var(--cor-texto-menos-chamativo);
 }
 
@@ -69,14 +69,14 @@ main > fieldset {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 2fr; /* Uma coluna menor para labels e outra maior para inputs (primeira medição é para o primeiro elemento filho, segunda medição é para o seg elemento filho - 1fr do espaço do elemento pai, 2fr do espaço do elemento pai)*/
-    gap: 15px 10px; /* Define um espaço de 15px entre as linhas e 10px entre as colunas. */
+    gap: 10px 0px; /* Define um espaço de 15px entre as linhas e 10px entre as colunas. */
     padding: 20px 20px 10px 10px;
-    align-items: center; /* Alinha os itens verticalmente no centro */
-
+    place-items: center;
 }
 
 main > fieldset > label {
-
+    position: relative;
+    left: 5px;
     text-align: center;
     font-size: 1.2em;
     font-style: italic;
@@ -85,8 +85,7 @@ main > fieldset > label {
 }
 
 main > fieldset > input {
-
-    width: 100%;
+    width: 150px;
     padding: 5px;
     box-sizing: border-box; /* Garante que o padding não ultrapasse a largura definida */
     border-radius: 10px 0px 10px 0px;
