@@ -46,6 +46,19 @@ html > body > main {
 
 }
 
+body > #container-inicial {
+
+    opacity: 0;  /* O elemento ficara invisível (opacidade 0). */
+    transition: opacity 1s ease-in;  /* Define uma transição suave de 1 segundos para a propriedade opacity. */
+
+}
+
+body > #container-inicial.mostrar {   /* "mostrar" é o nome declarado para a classe adicionada no JS */
+
+    opacity: 1;  /* Quando a classe "mostrar" é adicionada, a opacidade vai para 1 (totalmente visível). */
+
+}
+
 main > p.texto-tipo-1 {
     line-height: 0.6em;    /* cria espaçamento vertical entre os textos */
     color: var(--cor-textos-padrões);
