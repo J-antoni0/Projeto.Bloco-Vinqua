@@ -49,7 +49,7 @@ html > body > main {
 body > #container-inicial {
 
     opacity: 0;  /* O elemento ficara invisível (opacidade 0). */
-    transition: opacity 1s ease-in;  /* Define uma transição suave de 1 segundos para a propriedade opacity. */
+    transition: opacity 1s ease-in;  /* Define uma transição suave de 1 segundo para a propriedade opacity. */
 
 }
 
