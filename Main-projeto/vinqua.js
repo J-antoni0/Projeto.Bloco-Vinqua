@@ -9,4 +9,14 @@
         
         
     }
+
+    function acessar() {
+
+        const acess = document.querySelector('input#botaoacessar');
+        acess.classList.add('animate'); /* adiciona uma classe 'animate' */
+
+        setTimeout(() => {
+            acess.classList.remove('animate');
+        }, 500);
+    }
     

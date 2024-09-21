@@ -15,7 +15,7 @@
 
     --cormain: #EDEDED;
     --cor-textos-padrões: #ffffff;
-    --cor-texto-menos-chamativo: rgba(255, 255, 255, 0.795);
+    --cor-texto-menos-chamativo: #E8E7E8;
     --cor-button-acessar: rgba(255, 255, 255, 0.795);
 }
 
@@ -102,6 +102,7 @@ main > fieldset > input {
     box-sizing: border-box; /* Garante que o padding não ultrapasse a largura definida */
     border-radius: 10px 0px 10px 0px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.233);
+    background-color: white;
 }
 
 main > fieldset#botao-acessar {
@@ -111,9 +112,33 @@ main > fieldset#botao-acessar {
     padding: 10px;
 }
 
-fieldset#botao-acessar > input {
+fieldset#botao-acessar > input#botaoacessar {
     color: var(--cor-button-acessar) ;
+    background-color: white;
     text-shadow: 0px 0px 4px black;
     font-style: italic;
     font-size: 15px;
+}
+
+fieldset#botao-acessar > input#botaoacessar:hover {
+    transition-duration: 2s;
+    box-shadow: 0px 0px 4px white;
+    background-color: transparent;
+    color:var(--cor-texto-menos-chamativo);
+    cursor: pointer;
+}
+
+input.animate {
+    animation: clickEffect 0.5s ease-in-out;  /* faz com que o clique na animação,  seja ativado após 5 milissegundos*/
+}
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);  /* escala inicial padrão */
+    }
+    50% {
+        transform: scale(1.1); /* escala expandida */
+    }
+    100% {
+        transform: scale(1)  /* retorna a escala padrão */
+    }
 }
