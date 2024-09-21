@@ -1,3 +1,7 @@
+    
+    let user = document.querySelector('input#usuario');
+    let pass = document.querySelector('input#senha');
+    
     window.onload = function() {
 
         setTimeout(function(){
@@ -14,9 +18,17 @@
 
         const acess = document.querySelector('input#botaoacessar');
         acess.classList.add('animate'); /* adiciona uma classe 'animate' */
-
+        
+        if (user.value == 0 || pass.value == 0) {
+            window.alert  ('Usuário ou Senha Incorreto!');
+            user.value = ('');
+            pass.value = ('');
+        }
+        
         setTimeout(() => {
             acess.classList.remove('animate');
         }, 500);
+
+
     }
     
