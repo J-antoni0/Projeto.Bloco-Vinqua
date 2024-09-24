@@ -142,3 +142,28 @@ input.animate {
         transform: scale(1)  /* retorna a escala padrão */
     }
 }
+
+
+#container-do-carregador {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+}
+
+#carregamento {
+    height: 30px;
+    width: 30px;
+    border: 5px solid rgba(0, 0, 0, 0.514);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
