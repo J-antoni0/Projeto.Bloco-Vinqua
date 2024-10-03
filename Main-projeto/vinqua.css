@@ -96,6 +96,10 @@ main > fieldset > label {
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.514);
 }
 
+main > fieldset > label > span {
+    color: var(--cor-textos-padrões);
+}
+
 main > fieldset > input {
     width: 150px;
     padding: 5px;
@@ -103,6 +107,7 @@ main > fieldset > input {
     border-radius: 10px 0px 10px 0px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.233);
     background-color: white;
+    color: black;
 }
 
 main > fieldset#botao-acessar {

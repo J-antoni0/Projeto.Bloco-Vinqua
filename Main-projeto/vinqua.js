@@ -16,27 +16,29 @@
 
     function acessar() {
         
-        const acess = document.querySelector('input#botaoacessar');
-        acess.classList.add('animate'); /* adiciona uma classe 'animate' */
-        setTimeout(() => {
-            acess.classList.remove('animate');  /*  */
-        }, 500);
-        
         if (user.value.length < 5 || pass.value.length < 5) {  /* se o input tiver menos que 5 caracteres*/
             alert  ('Usuário ou Senha Incorreto!');  /*vai alertar na saída*/
             user.value = ('');  /* vai fazer o reset nos input's */
             pass.value = ('');
         } else {
-
+            
             document.querySelector('div#container-do-carregador').style.display = 'flex';  /*vai fazer aparecer o pai do elemento que tem efeito de carregamento */
             document.querySelector('main#container-inicial').style.display = 'none'; /* vai desabilitar o elemento main da tela de saida */
             
             setTimeout(() => {
                 document.querySelector('div#container-do-carregador').style.display = 'none'; /* desativa o pai do elemento de carregamento */
-                document.querySelector('main#container-inicial').style.display = 'block'; /* ativa o main novamente */
             }, 1500);
+            
+            user.value = ('');
+            pass.value = ('');
+            
         }
         
+        const acess = document.querySelector('input#botaoacessar');
+        acess.classList.add('animate'); /* adiciona uma classe 'animate' */
+        setTimeout(() => {
+            acess.classList.remove('animate');  /*  */
+        }, 500);
         
     }
     
