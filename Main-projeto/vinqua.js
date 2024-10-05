@@ -1,6 +1,7 @@
     
     let user = document.querySelector('input#usuario');
     let pass = document.querySelector('input#senha');
+    let contseg = document.querySelector('span#cont-seg');
     
     window.onload = function() {
 
@@ -32,6 +33,9 @@
             user.value = ('');
             pass.value = ('');
             
+            setTimeout(() =>{
+            contseg.style.display = 'flex'
+            }, 1500);
         }
         
         const acess = document.querySelector('input#botaoacessar');
